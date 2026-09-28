@@ -2,7 +2,7 @@
 #until loop
 
 i=1
-until ((i<=10))
+until ((i>10))
 do 
 echo "Best School"
 ((i++))

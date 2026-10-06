@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#oiroo
+pkill -f "7-highlander"

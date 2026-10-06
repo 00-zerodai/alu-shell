@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
-#nigga
-pgrep bash
+# Displays the PID and process name of processes containing "bash"
+for pid in $(pgrep bash); do
+    echo "$pid"
+    tr '\0' ' ' < /proc/$pid/cmdline
+    echo
+done
